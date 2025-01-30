@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.block-header {
+    background: rgb(150,154,247);
+    background: linear-gradient(90deg, rgba(150,154,247,0.4682247899159664) 0%, rgba(150,154,247,0) 100%);
+}
+
+.form-block {
+    background: rgb(106,50,180);
+    background: linear-gradient(180deg, rgba(106,50,180,1) 0%, rgba(85,38,147,1) 100%);
+}
+
+.header {
+    background-image: url('images/mask.png'),
+                        url('images/Vector-main.png');
+    background-size: cover;
+}
+
+.firms {
+    background-image: url('images/Mask-11.png'),
+                        url('images/section-firms.png');
+    
+    background-size: cover;
+    
+}
+
+.schema {
+    background-image: url('images/mask-schema-work.png');
+    background-size: cover;
+}
