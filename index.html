@@ -6,45 +6,48 @@
     <link href="src/index.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="bg-[#F2F2F4]">
+<body class="bg-[#F2F2F4] relative">
     
-<header class="header h-[850px] w-full">
+<header class="header h-[1100px] md:h-[850px] w-full">
    
     <div class="container flex flex-col">
-        <div class="h-[33px] flex justify-between items-center pt-[50px]">
-            <a href="/"><img src="src/images/logo.png" alt="logo"></a>
-            <ul class="text-white text-md font-serif cursor-pointer flex justify-center items-center gap-[38px]">
-                <li class="hover:text-gray-300">Каталог</li>
-                <li class="hover:text-gray-300">Производители</li>
-                <li class="hover:text-gray-300">Для  кого мы работаем</li>
-                <li class="hover:text-gray-300">Сертификаты</li>
-                <li class="hover:text-gray-300">О нас</li>
-                <li class="hover:text-gray-300">FAQ</li>
-                <li class="hover:text-gray-300">Контакты</li>
-            </ul>
-            <div class="flex justify-between items-center gap-1.5">
-                <span class="w-[33px] h-[33px] rounded-full bg-white flex justify-center items-center">
-                    <img class="w-[20px] h-[20px]" src="src/images/phone-vector.png" alt="">
-                </span>
-                <span class="text-xl font-bold text-white hover:text-gray-300 cursor-pointer">+7 (812) 313-58-45</span>
+        <div class="header-menu fixed top-0 container h-[100px] z-20">
+            <div class="h-[33px] flex justify-between items-center pt-[50px]">
+                <a href="/"><img src="src/images/logo.png" alt="logo"></a>
+                <ul class="text-white text-md font-serif cursor-pointer md:flex justify-center items-center md:gap-[38px] hidden">
+                    <li class="hover:text-gray-300">Каталог</li>
+                    <li class="hover:text-gray-300">Производители</li>
+                    <li class="hover:text-gray-300">Для  кого мы работаем</li>
+                    <li class="hover:text-gray-300">Сертификаты</li>
+                    <li class="hover:text-gray-300">О нас</li>
+                    <li class="hover:text-gray-300">FAQ</li>
+                    <li class="hover:text-gray-300">Контакты</li>
+                </ul>
+                <div class="hidden md:flex justify-between items-center gap-1.5">                 
+                    <span class="w-[33px] h-[33px] rounded-full bg-white flex justify-center items-center">                     
+                        <img class="w-[20px] h-[20px]" src="src/images/phone-vector.png" alt="">                 
+                    </span>                 
+                    <span class="text-xl font-bold text-white hover:text-gray-300 cursor-pointer">+7 (812) 313-58-45</span>             
+                </div>
+                <button class="md:hidden block text-bold cursor-pointer"><img src="src/images/burger.svg" alt="burger"></button>
             </div>
         </div>
 
-        <div class="flex justify-between items-center mt-[115px]">
+        <div class="flex:col md:flex justify-between items-center mt-[115px] ">
 
-            <div>
-                <div class="text-white text-[70px] font-bold leading-none">
-                    <p class="font-bold text-[90px]">Оптовые поставки</p>
-                    <p class="text-[#969AF7] text-[60px]">электронных компонентов</p>
-                    <p class="pt-2">ИЗ КИТАЯ ДЕНЬ В ДЕНЬ</p>
+            <div class="">
+                <div class="text-white font-bold leading-none text-center md:text-start">
+                    <p class="font-bold text-[60px] md:text-[90px]">Оптовые поставки</p>
+                    <p class="text-[#969AF7] text-[40px] md:text-[60px]">электронных компонентов</p>
+                    <p class="pt-2 text-[50px] md:text-[70px]">ИЗ КИТАЯ ДЕНЬ В ДЕНЬ</p>
                 </div>
     
-                <div class="text-[#969AF7] text-[23px] mt-4">
+                <div class="text-[#969AF7] text-[18px] md:text-[23px] mt-4 text-center md:text-start">
                     <p>Комплексные поставки электронных компонентов и оборудования. </p>
                     <p>Подберем аналоги популярных брендов из Европы в условиях санкций.</p>
                 </div>
 
-                <div class="w-[835px] h-[150px] mt-[40px] flex items-center block-header rounded">
+                <div class="w-[700px] h-[150px] md:w-[835px] md:h-[150px] mt-[40px] flex items-center block-header rounded">
                     <div class="flex flex-col text-white pl-[40px]">
                         <div class="flex flex-row items-center text-[20px] gap-3">
                             <span>
@@ -75,8 +78,8 @@
                 </div>
             </div>
             
-
-            <div class="w-[380px] h-[473px] bg-white mt-6 rounded-lg">
+        <div class="flex justify-center md:block">
+            <div class="w-[490px] h-[473px] md:w-[380px] md:h-[473px] bg-white mt-6 rounded-lg">
                 <div class="form-block h-[110px] w-full rounded-t-lg flex justify-center items-center">
                     <div class="h-[70px] flex flex-col justify-center items-center text-[23px] text-white font-bold">
                         <p>ЗАКАЖИТЕ</p>
@@ -105,8 +108,8 @@
                         
                     </div>
                 </form>
-            </div>
-
+            </div> 
+        </div>
         </div>
     </div>
 
@@ -124,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="mt-10 grid grid-cols-3 gap-16">
+            <div class="mt-10 grid grid-cols-1 justify-items-center md:grid-cols-3 gap-16 w-full">
                 <div class="w-[370px] h-[406px] rounded bg-white overflow-hidden relative">
 
                     <div class="flex justify-center items-center my-16">
@@ -369,7 +372,74 @@
 
         </div>
     </section>
+
+    <section class="quet w-full h-[1370px] -mt-[60px]">
+        <div class="container">
+            
+            <h2 class="text-[48px] text-white font-bold text-center pt-[150px]">Ответы на самые популярные вопросы в сфере</h2>
+
+            <div class="flex flex-col justify-center items-center mt-[30px] gap-[20px]">
+
+                <div class="w-[1280px] h-[87px] rounded-lg linblock flex justify-between items-center gap-[24px]">
+                    <p class="text-[24px] text-[#333333] font-bold ml-[24px]">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                    <span class="w-[40px] h-[40px] rounded-full bg-[#757AEF] flex justify-center items-center mr-[24px] cursor-pointer hover:bg-indigo-600"><img src="src/images/arrow-down.png" alt="arr"></span>
+                </div>
+
+                <div class="w-[1280px] h-[550px] rounded-lg bg-white">
+                    <div class="w-[1280px] h-[87px] rounded-lg main-linblock flex justify-between items-center gap-[24px]">
+                        <p class="text-[24px] text-[#333333] font-bold ml-[24px]">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                        <span class="w-[40px] h-[40px] rounded-full bg-white flex justify-center items-center mr-[24px] cursor-pointer hover:bg-indigo-100"><img src="src/images/arrow-up-blue.png" alt="arr"></span>
+                    </div>
+                    <div class=" flex flex-col gap-[30px] text-[18px] text-[#333333] px-[40px] py-[40px]">
+                        <p>Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a variety of different medical therapies that utilize stem cells in some form to treat a patient. Sometimes the term is used incorrectly to refer to platelet rich plasma (PRP) injections. The term is also used to refer to stem cell transplants, also known as bone marrow transplants.
+                        </p>
+                        <p>Most commonly “stem cell therapy” is used to describe a procedure where the patient’s adult stem cells and other potentially regenerative cells are harvested from a tissue sample of either fat or bone marrow taken from the patient. These concentrated regenerative cells are then used to treat specific injuries typically by injecting them into the afflicted area. It should be said that this type of stem cell therapy is currently not FDA approved and clinics performing it illegally in the US or in other countries perform various versions of the procedure to treat illnesses and injuries with little to no clinical evidence.
+                        </p>
+                        <p>At InGeneron we use the term “regenerative cell therapy” since there are many different cell types and regenerative properties collected and used by our therapy along with adult stem cells. Importantly we do not treat patients outside of our approved clinical trials and we are dedicated to securing FDA approval through rigorous clinical testing.        
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[1280px] h-[87px] rounded-lg linblock flex justify-between items-center gap-[24px]">
+                    <p class="text-[24px] text-[#333333] font-bold ml-[24px]">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                    <span class="w-[40px] h-[40px] rounded-full bg-[#757AEF] flex justify-center items-center mr-[24px] cursor-pointer hover:bg-indigo-600"><img src="src/images/arrow-down.png" alt="arr"></span>
+                </div>
+                <div class="w-[1280px] h-[87px] rounded-lg linblock flex justify-between items-center gap-[24px]">
+                    <p class="text-[24px] text-[#333333] font-bold ml-[24px]">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                    <span class="w-[40px] h-[40px] rounded-full bg-[#757AEF] flex justify-center items-center mr-[24px] cursor-pointer hover:bg-indigo-600"><img src="src/images/arrow-down.png" alt="arr"></span>
+                </div>
+                <div class="w-[1280px] h-[87px] rounded-lg linblock flex justify-between items-center gap-[24px]">
+                    <p class="text-[24px] text-[#333333] font-bold ml-[24px]">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                    <span class="w-[40px] h-[40px] rounded-full bg-[#757AEF] flex justify-center items-center mr-[24px] cursor-pointer hover:bg-indigo-600"><img src="src/images/arrow-down.png" alt="arr"></span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
 </main>
 
+<footer class="w-full h-[177px] bg-[#333333] flex items-center">
+    <div class="container">
+        <div class="h-[33px] flex justify-between items-center">
+            <a href="/"><img src="src/images/logo.png" alt="logo"></a>
+            <ul class="text-white text-md font-serif cursor-pointer flex justify-center items-center gap-[28px]">
+                <li class="hover:text-gray-300">Каталог</li>
+                <li class="hover:text-gray-300">Производители</li>
+                <li class="hover:text-gray-300">Для  кого мы работаем</li>
+                <li class="hover:text-gray-300">Сертификаты</li>
+                <li class="hover:text-gray-300">О нас</li>
+                <li class="hover:text-gray-300">FAQ</li>
+                <li class="hover:text-gray-300">Контакты</li>
+            </ul>
+            <button class="w-[261px] h-[56px] text-white bg-[#969AF7] rounded-lg text-[18px] cursor-pointer hover:bg-indigo-500">
+                ОСТАВИТЬ ЗАЯВКУ
+            </button>
+        </div>
+    </div>
+</footer>
+
+<script src="src/script.js"></script>
 </body>
 </html>

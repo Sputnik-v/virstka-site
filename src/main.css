@@ -4,6 +4,10 @@
     max-width: 1280px;
     margin: 0 auto;
 }
+.container-m {
+    max-width: 520px;
+    margin: 0 auto;
+}
 
 .block-header {
     background: rgb(150,154,247);
@@ -32,4 +36,18 @@
 .schema {
     background-image: url('images/mask-schema-work.png');
     background-size: cover;
+}
+
+.quet {
+    background-image: url('images/Mask-end.png'),
+                        url('images/background-endr.png');
+    
+    background-size: cover;
+}
+
+.linblock {
+    background-image: linear-gradient(#FFFFFF, #BDC0FF);
+}
+.main-linblock {
+    background-image: linear-gradient(#969AF7, #686EEC);
 }
